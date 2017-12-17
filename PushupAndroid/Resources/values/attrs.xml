@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <declare-styleable name="weekday_toggle">
+    <attr name="isSelected" format="boolean"/>
+  </declare-styleable>
+  <declare-styleable name="play_button">
+    <attr name="isPaused" format="boolean"/>  
+  </declare-styleable>
+</resources>

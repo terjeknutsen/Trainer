@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44A007F5-0BDA-466D-956F-142426E5D707}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PushUp.Application</RootNamespace>
+    <AssemblyName>PushUp.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Alpha|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Alpha\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Beta|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Beta\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\ServiceBase.cs" />
+    <Compile Include="ChallengeService.cs" />
+    <Compile Include="Commands\ActivateChallenge.cs" />
+    <Compile Include="Commands\AddMeasurementValue.cs" />
+    <Compile Include="Commands\CreateChallenge.cs" />
+    <Compile Include="Commands\CreateMeasurement.cs" />
+    <Compile Include="Commands\CreateWorkout.cs" />
+    <Compile Include="Commands\PauseChallenge.cs" />
+    <Compile Include="Commands\SetChallengeDescription.cs" />
+    <Compile Include="Commands\SetChallengeDuration.cs" />
+    <Compile Include="Commands\SetDailyRepetitions.cs" />
+    <Compile Include="Commands\SetMeasurementType.cs" />
+    <Compile Include="Commands\SetMeasurementUnit.cs" />
+    <Compile Include="Commands\SetRestingCycle.cs" />
+    <Compile Include="Commands\SetWorkoutAsExecuted.cs" />
+    <Compile Include="EventHandlers\EventHandler.cs" />
+    <Compile Include="EventHandlers\MeasurementEventHandler.cs" />
+    <Compile Include="EventHandlers\WorkoutEventHandler.cs" />
+    <Compile Include="MeasurementService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EventHandlers\ChallengeEventHandler.cs" />
+    <Compile Include="Views\IUpdateView.cs" />
+    <Compile Include="Views\ViewStore.cs" />
+    <Compile Include="Views\ViewStoreFactory.cs" />
+    <Compile Include="WorkoutService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationInterfaces\ApplicationInterfaces.csproj">
+      <Project>{3e6de48d-739b-4814-a8f3-c892cac0d760}</Project>
+      <Name>ApplicationInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoreDomain\CoreDomain.csproj">
+      <Project>{40e9d78f-5aea-4b6c-a16b-02e764ccb3bb}</Project>
+      <Name>CoreDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainInterfaces\DomainInterfaces.csproj">
+      <Project>{baa3da66-a5e9-4643-93e2-a053a13ebdb0}</Project>
+      <Name>DomainInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StorageInterfaces\StorageInterfaces.csproj">
+      <Project>{870cb858-6767-49fe-bfdb-c2dca21b7746}</Project>
+      <Name>StorageInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{366C162F-8BE0-4236-A425-9DBA3AC5EACF}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

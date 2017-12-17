@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+  <no.trainer.personal.widgets.PlayButton
+    android:id="@+id/play_pause_challenge"
+    android:layout_width="92dp"
+    android:layout_height="92dp"
+    android:layout_gravity="right"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="20dp"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+    style="@style/borderless"/>
+</merge>

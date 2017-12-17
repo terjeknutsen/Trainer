@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+      android:id="@+id/nav_challenge"
+      android:title="@string/challenge"
+      android:onClick="ChallengeSelected"/>
+    <item
+      android:id="@+id/nav_workout"
+      android:title="@string/workout"
+      android:onClick="WorkoutSelected"/>
+    <item
+      android:id="@+id/nav_measurement"
+      android:title="@string/measurement"
+      android:onClick="MeasurementSelected"/>
+  </group>
+</menu>

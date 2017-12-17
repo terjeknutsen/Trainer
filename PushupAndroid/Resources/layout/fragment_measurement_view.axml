@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <!--<FrameLayout
+    android:id="@+id/frame"
+    android:layout_height="250dp"
+    android:layout_width="match_parent"
+    android:background="@color/material_deeporange_500"/>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/frame"
+    android:layout_marginLeft="16dp">
+    <Spinner
+      android:id="@+id/spinner_measurement_type"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"/>
+    <Spinner
+      android:id="@+id/spinner_measurement_unit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_gravity="center"/>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_gravity="center">
+      <EditText
+        android:id="@+id/last_measurement_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:hint="@string/last_measurement_hint"/>
+      <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_weight="1">
+        <ImageButton
+          android:id="@+id/drop_up_value"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_arrow_drop_up"
+          android:adjustViewBounds="true"
+          android:scaleType="fitCenter"
+          style="@style/borderless"
+          android:layout_alignParentTop="true"/>
+        <ImageButton
+          android:id="@+id/drop_down_value"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_arrow_drop_down"
+          android:layout_alignParentBottom="true"
+          android:adjustViewBounds="true"
+          android:scaleType="fitCenter"
+          style="@style/borderless"/>
+      </RelativeLayout>
+
+    </LinearLayout>
+    
+  </LinearLayout>-->
+    
+    
+
+</RelativeLayout>

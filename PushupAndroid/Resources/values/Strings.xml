@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">PushupAndroid</string>
+  <string name="executed">Executed</string>
+  <string name="day">day</string>
+  <string name="daily_repetitions">daily repetitions</string>
+  <string name="total_repetitions">to date</string>
+  <string name="active_days">active days</string>
+  <string name="monday">mon</string>
+  <string name="tuesday">tue</string>
+  <string name="wednesday">wed</string>
+  <string name="thursday">thu</string>
+  <string name="friday">fri</string>
+  <string name="saturday">sat</string>
+  <string name="sunday">sun</string>
+  <string name="highlights">highlights</string>
+  <string name="challenge">Challenge</string>
+  <string name="workout">Workout</string>
+  <string name="measurement">Measurement</string>
+  <string name="open_menu">Where to go next?</string>
+  <string name="measurement_value_hint">Current</string>
+</resources>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19FF2EAC-710D-4DEE-ACB2-8835FBFE2F8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Domain.Tests</RootNamespace>
+    <AssemblyName>Domain.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Alpha|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Alpha\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Beta|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Beta\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExpectedObjects, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\ExpectedObjects.1.2.3\lib\net40\ExpectedObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Should, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\Should.1.1.20\lib\Should.dll</HintPath>
+    </Reference>
+    <Reference Include="SpecsFor, Version=5.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\SpecsFor.5.0.1\lib\net40\SpecsFor.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.1.3.394, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\structuremap.4.1.3.394\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.Net4, Version=4.1.3.394, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\structuremap.4.1.3.394\lib\net40\StructureMap.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WhenActivateChallenge\GivenChallengeIsActive.cs" />
+    <Compile Include="WhenActivateChallenge\GivenChallengeIsPaused.cs" />
+    <Compile Include="WhenAddValueToMeasurement\GivenAnyMeasurement.cs" />
+    <Compile Include="WhenChangeDescription\GivenDescriptionNotPreviouslySet.cs" />
+    <Compile Include="WhenChangeDescription\GivenSameDescriptionAlreadyProvided.cs" />
+    <Compile Include="WhenChangeMeasurement\GivenIsNewType.cs" />
+    <Compile Include="WhenChangeMeasurement\GivenIsNewUnit.cs" />
+    <Compile Include="WhenChangeMeasurement\GivenTypeHasNotChanged.cs" />
+    <Compile Include="WhenChangeMeasurement\GivenUnitHasNotChanged.cs" />
+    <Compile Include="WhenCheckState\GivenChallengeActivated.cs" />
+    <Compile Include="WhenCheckState\GivenChallengeCreatedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenChallengeDescriptionChangedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenChallengePausedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenDailyRepetitionsChangedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenMeasurementCreatedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenMeasurementTypeChangedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenMeasurementUnitChangedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenMeasurementValueAddedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenRestingCycleChangedEvent.cs" />
+    <Compile Include="WhenCreateChallenge\GivenChallengeAlreadyCreated.cs" />
+    <Compile Include="WhenCreateChallenge\GivenIsNewChallenge.cs" />
+    <Compile Include="WhenCheckState\GivenWorkoutCreatedEvent.cs" />
+    <Compile Include="WhenCreateMeasurement\GivenIsNewMeasurement.cs" />
+    <Compile Include="WhenCreateMeasurement\GivenMeasurementAlreadyCreated.cs" />
+    <Compile Include="WhenCreateMeasurement\GivenMeasurementTypeIsNotSet.cs" />
+    <Compile Include="WhenCreateMeasurement\GivenMeasurementUnitIsNotSet.cs" />
+    <Compile Include="WhenCreateWorkout\GivenIsNewWorkout.cs" />
+    <Compile Include="WhenCreateWorkout\GivenWorkoutAlreadyCreated.cs" />
+    <Compile Include="WhenCheckState\GivenChallengeDurationChangedEvent.cs" />
+    <Compile Include="WhenPauseChallenge\GivenChallengeAlreadyPaused.cs" />
+    <Compile Include="WhenPauseChallenge\GivenChallengeIsActive.cs" />
+    <Compile Include="WhenSetChallengeDuration\GivenIsDifferentDurationThanDefault.cs" />
+    <Compile Include="WhenSetChallengeDuration\GivenNewDurationIsEqualToCurrentDuration.cs" />
+    <Compile Include="WhenSetChallengeRepetitions\GivenIsDifferentRepetitionCountThanDefault.cs" />
+    <Compile Include="WhenSetChallengeRepetitions\GivenIsSameRepetitionCount.cs" />
+    <Compile Include="WhenSetRestCycle\GivenChallengeIsPaused.cs" />
+    <Compile Include="WhenSetRestCycle\GivenRestingCycleNotPreviouslySet.cs" />
+    <Compile Include="WhenSetRestCycle\GivenSameRestingCycleAlreadySet.cs" />
+    <Compile Include="WhenSetWorkoutAsExecuted\GivenAlreadyExecuted.cs" />
+    <Compile Include="WhenSetWorkoutAsExecuted\GivenWorkoutExecutedEventProvided.cs" />
+    <Compile Include="WhenSetWorkoutAsExecuted\GivenWorkoutNotExecuted.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoreDomain\CoreDomain.csproj">
+      <Project>{40e9d78f-5aea-4b6c-a16b-02e764ccb3bb}</Project>
+      <Name>CoreDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainInterfaces\DomainInterfaces.csproj">
+      <Project>{BAA3DA66-A5E9-4643-93E2-A053A13EBDB0}</Project>
+      <Name>DomainInterfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
