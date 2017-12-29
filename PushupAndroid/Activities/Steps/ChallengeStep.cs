@@ -13,10 +13,12 @@ namespace no.trainer.personal.Activities.Steps
     public class ChallengeStep : AbstractStep, 
         IControlFocus,
         IUpdateDailyRepetitions,
-        IAdjustPossibleDailyRepetitions
+        IAdjustPossibleDailyRepetitions,
+        IVerifyChallenge
     {
         private int i = 1;
         private TextInputEditText editTextDescription;
+        private TextInputLayout textInputLayoutChallengeDescription;
         private EditText editTextDailyRepetitions;
         private SeekBar seekBarDailyRepetitions;
         private readonly static System.String CLICK = "click";
@@ -32,13 +34,16 @@ namespace no.trainer.personal.Activities.Steps
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             editTextDescription = view.FindViewById<TextInputEditText>(Resource.Id.edit_text_challenge_description);
+            textInputLayoutChallengeDescription = view.FindViewById<TextInputLayout>(Resource.Id.text_input_layout_challenge_description);
             editTextDailyRepetitions = view.FindViewById<EditText>(Resource.Id.edit_text_challenge_daily_repetitions);
             seekBarDailyRepetitions = view.FindViewById<SeekBar>(Resource.Id.seekbar_challenge_daily_repetitions);
+            PermissionNext = true;
             base.OnViewCreated(view, savedInstanceState);
         }
         public override void OnStart()
         {
-            editTextDailyRepetitions.AddTextChangedListener(new DailyRepetitionWatcher(this,this,this));
+            editTextDailyRepetitions.AddTextChangedListener(new DailyRepetitionWatcher(this,this,this,this));
+            editTextDescription.AfterTextChanged += (o,e) => VerifyChallenge();
             seekBarDailyRepetitions.ProgressChanged += OnDailyRepetitionsChanged;
             seekBarDailyRepetitions.StartTrackingTouch += delegate { SeekbarActivated = true; };
             seekBarDailyRepetitions.StopTrackingTouch += delegate { SeekbarActivated = false; };
@@ -53,15 +58,18 @@ namespace no.trainer.personal.Activities.Steps
 
         public override void OnNotPermission()
         {
+            
+            if (string.IsNullOrEmpty(editTextDescription.Text) || string.IsNullOrWhiteSpace(editTextDescription.Text))
+            {
+                textInputLayoutChallengeDescription.Error = Resources.GetString(Resource.String.error_challenge_description);
+            }
+            else
+            {
+                textInputLayoutChallengeDescription.Error = null;
+            }
+
             base.OnNotPermission();
-            Console.WriteLine("Not Permission");
-            Toast.MakeText(Activity, "Not Permission", ToastLength.Short).Show();
-
-
-            //Now Allow For Test
-            PermissionNext = true;
         }
-
 
         public override void OnSaveInstanceState(Bundle outState)
         {
@@ -79,26 +87,6 @@ namespace no.trainer.personal.Activities.Steps
             return false;
         }
 
-
-        public override void onStepVisible()
-        {
-        }
-
-        public override void onNext()
-        {
-            Console.WriteLine("onNext");
-        }
-
-        public override void onPrevious()
-        {
-            Console.WriteLine("onPrevious");
-        }
-
-        public override System.String optional()
-        {
-            return "You can skip";
-        }
-
         public override bool nextIf()
         {
             return i > 1;
@@ -106,7 +94,7 @@ namespace no.trainer.personal.Activities.Steps
 
         public override System.String error()
         {
-            return "<b>You must click!</b> <small>this is the condition!</small>";
+            return Resources.GetString(Resource.String.step_challenge_error);
         }
 
         public void SetValue(int value)
@@ -118,6 +106,28 @@ namespace no.trainer.personal.Activities.Steps
         {
             var max = currentValue * 1.5;
             seekBarDailyRepetitions.Max = (int)max;
+        }
+
+        public void VerifyChallenge()
+        {
+            if (string.IsNullOrEmpty(editTextDescription.Text) || string.IsNullOrWhiteSpace(editTextDailyRepetitions.Text))
+            {
+                textInputLayoutChallengeDescription.Error = Resources.GetString(Resource.String.error_challenge_description);
+                i = 1;
+                return;
+            }
+            else
+                textInputLayoutChallengeDescription.Error = null;
+            if (!int.TryParse(editTextDailyRepetitions.Text, out int result))
+            {
+                i = 1;
+                return;
+            }
+
+            if (i == 2) return;
+
+            i = 2;
+            mStepper.getExtras().PutInt(CLICK, i);
         }
     }
     interface IControlFocus
@@ -132,17 +142,27 @@ namespace no.trainer.personal.Activities.Steps
     {
         void SetMaxDailyRepetitions(int currentValue);
     }
+    interface IVerifyChallenge
+    {
+        void VerifyChallenge();
+    }
     class DailyRepetitionWatcher : Java.Lang.Object, ITextWatcher
     {
         private readonly IControlFocus focusController;
         private readonly IUpdateDailyRepetitions dailyRepetitionsUpdater;
         private readonly IAdjustPossibleDailyRepetitions maxDailyRepetitionsAdjuster;
+        private readonly IVerifyChallenge challengeVerifier;
 
-        public DailyRepetitionWatcher(IControlFocus focusController, IUpdateDailyRepetitions dailyRepetitionsUpdater,IAdjustPossibleDailyRepetitions maxDailyRepetitionsAdjuster)
+        public DailyRepetitionWatcher(
+            IControlFocus focusController, 
+            IUpdateDailyRepetitions dailyRepetitionsUpdater,
+            IAdjustPossibleDailyRepetitions maxDailyRepetitionsAdjuster,
+            IVerifyChallenge challengeVerifier)
         {
             this.focusController = focusController;
             this.dailyRepetitionsUpdater = dailyRepetitionsUpdater;
             this.maxDailyRepetitionsAdjuster = maxDailyRepetitionsAdjuster;
+            this.challengeVerifier = challengeVerifier;
         }
 
         public void AfterTextChanged(IEditable s)
@@ -152,6 +172,7 @@ namespace no.trainer.personal.Activities.Steps
             if (result > 0)
                 maxDailyRepetitionsAdjuster.SetMaxDailyRepetitions(result);
             dailyRepetitionsUpdater.SetValue(result);
+            challengeVerifier.VerifyChallenge();
         }
 
         public void BeforeTextChanged(ICharSequence s, int start, int count, int after)

@@ -159,6 +159,7 @@
   <ItemGroup>
     <Compile Include="Activities\AddChallengeActivity.cs" />
     <Compile Include="Activities\MainTabActivity.cs" />
+    <Compile Include="Activities\Steps\ChallengeDateStep.cs" />
     <Compile Include="Activities\Steps\ChallengeStep.cs" />
     <Compile Include="Activities\Utils\DrawerToggle.cs" />
     <Compile Include="Adapters\ChallengeAdapter.cs" />
@@ -280,6 +281,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\step_challenge.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step_challenge_date.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

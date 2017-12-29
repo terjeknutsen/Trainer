@@ -14,6 +14,7 @@ namespace no.trainer.personal.Activities
         {
             setTitle(Resources.GetString(Resource.String.add_challenge_title));
             addStep(CreateFragment(new ChallengeStep()));
+            addStep(CreateFragment(new ChallengeDateStep()));
             base.OnCreate(savedInstanceState);
         }
 

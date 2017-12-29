@@ -22,6 +22,8 @@
   <string name="hint_challenge_description">Describe your challenge</string>
   <string name="add_challenge_title">Create your challenge</string>
   <string name="hint_challenge_daily_repetitions">Daily repetitions</string>
+  <string name="step_challenge_error">Both description and daily repetitions needs to have a value</string>
+  <string name="error_challenge_description">*mandatory field</string>
 
 
   <string name="app_name">Material Stepper Sample</string>
