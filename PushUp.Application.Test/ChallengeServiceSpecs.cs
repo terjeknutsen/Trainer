@@ -1,4 +1,5 @@
-﻿using CoreDomain.Events;
+﻿using CoreDomain.Enteties;
+using CoreDomain.Events;
 using Domain.Identity;
 using DomainInterfaces;
 using Moq;
@@ -133,6 +134,28 @@ namespace PushUp.Application.Test
             protected override void When()
             {
                 AsyncContext.Run(async () => await SUT.ExecuteCommand(new ActivateChallenge(Guid.NewGuid())));
+            }
+            [Test]
+            public void Then_view_model_should_be_updated()
+            {
+                GetMockFor<IRepository<ChallengeViewModel>>().Verify(c => c.UpdateAsync(It.IsAny<ChallengeViewModel>()), Times.Once);
+            }
+        }
+
+        public class When_change_workout_schedule : SpecsFor<ChallengeService>
+        {
+            protected override void InitializeClassUnderTest()
+            {
+                InitSut(this, new ChallengeViewModelExist());
+            }
+            protected override void When()
+            {
+                AsyncContext.Run(async () => await SUT.ExecuteCommand(new SetWorkoutSchedule(Guid.NewGuid(), 
+                    new List<KeyValuePair<TimeSpan, int>>
+                    { 
+                        new KeyValuePair<TimeSpan, int>(TimeSpan.FromHours(2),20)
+                    }
+                )));
             }
             [Test]
             public void Then_view_model_should_be_updated()

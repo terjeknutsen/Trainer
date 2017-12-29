@@ -19,4 +19,18 @@
   <string name="measurement">Measurement</string>
   <string name="open_menu">Where to go next?</string>
   <string name="measurement_value_hint">Current</string>
+  <string name="hint_challenge_description">Describe your challenge</string>
+  <string name="add_challenge_title">Create your challenge</string>
+  <string name="hint_challenge_daily_repetitions">Daily repetitions</string>
+
+
+  <string name="app_name">Material Stepper Sample</string>
+  <string name="linear">LINEAR</string>
+  <string name="tabs_stepper">Tabs Stepper</string>
+  <string name="text_stepper">Text Stepper</string>
+  <string name="progress_stepper">Progress Stepper</string>
+  <string name="dots_stepper">Dots Stepper</string>
+  <string name="non_linear">NON LINEAR</string>
+  <string name="tabs_stepper_alternative">Tabs Stepper (Alternative)</string>
+  <string name="tabs_stepper_classic">Tabs Stepper (Classic)</string>
 </resources>

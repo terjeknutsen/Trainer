@@ -70,7 +70,7 @@ namespace ViewModels
         public int DaysLeft => (DateTime.Now - StartDate).Days;
         public int TotalRepetitions { get; set; }
         public IList<Tuple<string,double,string,double>> Measurements { get; set; }
-
+        public IEnumerable<KeyValuePair<TimeSpan, int>> Schedule { get; set; }
 
         public void Pause(bool isPaused)
         {

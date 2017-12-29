@@ -1,8 +1,6 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.Support.V4.App;
-using System.Threading;
 
 namespace no.trainer.personal.Services
 {
@@ -29,9 +27,7 @@ namespace no.trainer.personal.Services
             builder.SetContentIntent(pendingIntent);
             builder.SetAutoCancel(true);
             var notify = builder.Build();
-            var timerCallback = new TimerCallback(notifier, notify);
-            var delay = (int)TimeSpan.FromMinutes(1).TotalMilliseconds;
-            Timer timer = new Timer(timerCallback.SendNotification, null, delay, Timeout.Infinite);
+            notifier.Notify(8471, notify);
         }
 
         class TimerCallback

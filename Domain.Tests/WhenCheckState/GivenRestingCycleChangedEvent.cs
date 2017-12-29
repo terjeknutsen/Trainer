@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SpecsFor;
-using Should;
 using Moq;
 using NUnit.Framework;
 using Domain.Core.States;

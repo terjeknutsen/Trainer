@@ -8,6 +8,7 @@ using PushUp.Application.Commands;
 using System.Threading.Tasks;
 using no.trainer.personal.Broadcasts;
 using Android.Support.V4.Content;
+using Android.Support.V4.App;
 
 namespace no.trainer.personal.Services
 {
@@ -31,8 +32,15 @@ namespace no.trainer.personal.Services
 
         private void BroadcastSuccess(Guid id)
         {
-            var nextWorkoutIntent = new Intent(this, typeof(WorkoutReminderService));
-            StartService(nextWorkoutIntent);
+            var manager = (AlarmManager)GetSystemService(Context.AlarmService);
+            var alarmIntent = new Intent(this,typeof(NextWorkoutReceiver));
+            var pendingIntent = PendingIntent.GetBroadcast(this, 2844, alarmIntent, PendingIntentFlags.UpdateCurrent);
+            var time = DateTime.Now.AddMinutes(1);
+            var calendar = Java.Util.Calendar.Instance;
+            calendar.TimeInMillis = Java.Lang.JavaSystem.CurrentTimeMillis();
+            calendar.Set(time.Year, time.Month - 1, time.Day, time.Hour, time.Minute, time.Second);
+
+            AlarmManagerCompat.SetAlarmClock(manager, calendar.TimeInMillis, null, pendingIntent);
 
             var intent = new Intent(nameof(SetWorkoutAsExecutedSuccessReceiver));
             var bundle = new Bundle();

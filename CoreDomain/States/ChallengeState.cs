@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DomainInterfaces;
 using CoreDomain.Events;
 using Domain.Identity;
+using System.Linq;
 
 namespace Domain.Core.States
 {
@@ -28,6 +29,7 @@ namespace Domain.Core.States
             {6,true },
             {7,true }
         };
+        public List<KeyValuePair<TimeSpan,int>> Schedule { get; set; }
         public bool IsPaused { get; set; }
         public DateTime PausedDateTime { get; set; }
         public TimeSpan PausedDuration { get; set; }
@@ -67,5 +69,10 @@ namespace Domain.Core.States
             IsPaused = false;
             PausedDuration = @event.OccurredOn - PausedDateTime;
         }
+        public void When(WorkoutScheduleChanged @event)
+        {
+            Schedule = @event.Schedule.ToList();
+        }
+
     }
 }

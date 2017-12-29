@@ -114,6 +114,7 @@ namespace PushupAndroid.Activities
             LocalBroadcastManager.GetInstance(this).RegisterReceiver(setWorkoutAsExecutedSuccessReceiver, new IntentFilter(nameof(SetWorkoutAsExecutedSuccessReceiver)));
             LocalBroadcastManager.GetInstance(this).RegisterReceiver(setWorkoutAsExecutedFailureReceiver, new IntentFilter(nameof(SetWorkoutAsExecutedFailureReceiver)));
             LocalBroadcastManager.GetInstance(this).RegisterReceiver(createWorkoutSuccessReceiver, new IntentFilter(nameof(CreateWorkoutSuccessReceiver)));
+            
 
         }
         protected override void OnStop()

@@ -26,7 +26,7 @@ namespace no.trainer.personal.Services
             var bundle = intent.GetBundleExtra(nameof(CreateChallenge));
             var cmd = new CreateChallenge(
                 Guid.NewGuid(),
-                bundle.GetInt(nameof(CreateChallenge.Repetitions)),
+                bundle.GetInt(nameof(CreateChallenge.DailyRepetitions)),
                 bundle.GetString(nameof(CreateChallenge.Description)));
             var task = challengeService.ExecuteCommand(cmd);
             task.ContinueWith(_=> BroadcastSuccess());

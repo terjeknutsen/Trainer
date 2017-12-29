@@ -82,6 +82,7 @@
     <Compile Include="Commands\SetMeasurementUnit.cs" />
     <Compile Include="Commands\SetRestingCycle.cs" />
     <Compile Include="Commands\SetWorkoutAsExecuted.cs" />
+    <Compile Include="Commands\SetWorkoutSchedule.cs" />
     <Compile Include="EventHandlers\EventHandler.cs" />
     <Compile Include="EventHandlers\MeasurementEventHandler.cs" />
     <Compile Include="EventHandlers\WorkoutEventHandler.cs" />

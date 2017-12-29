@@ -1,4 +1,5 @@
-﻿using CoreDomain.Events;
+﻿using CoreDomain.Enteties;
+using CoreDomain.Events;
 using Domain.Core.Base;
 using Domain.Core.States;
 using Domain.Identity;
@@ -64,6 +65,10 @@ namespace CoreDomain
         {
             if(state.IsPaused)
             Apply(new ChallengeActivated(dateTime));
+        }
+        public void SetWorkoutSchedule(WorkoutSchedule schedule,DateTime dateTime)
+        {
+            Apply(new WorkoutScheduleChanged(schedule.Schedule, dateTime));
         }
     }
 }

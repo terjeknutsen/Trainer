@@ -8,11 +8,11 @@ namespace PushUp.Application.Commands
         public CreateChallenge(Guid id,int repetitions,string description)
         {
             Id = id;
-            Repetitions = repetitions;
+            DailyRepetitions = repetitions;
             Description = description;
         }
         public Guid Id { get; }
-        public int Repetitions { get;  }
+        public int DailyRepetitions { get;  }
         public string Description { get;  }
     }
 }

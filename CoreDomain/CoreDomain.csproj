@@ -71,6 +71,7 @@
     <Compile Include="Base\AggregateRoot.cs" />
     <Compile Include="Base\State.cs" />
     <Compile Include="Challenge.cs" />
+    <Compile Include="Enteties\WorkoutSchedule.cs" />
     <Compile Include="Events\ChallengeActivated.cs" />
     <Compile Include="Events\ChallengeCreated.cs" />
     <Compile Include="Events\ChallengeDescriptionChanged.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Events\RestingCycleChanged.cs" />
     <Compile Include="Events\WorkoutCreated.cs" />
     <Compile Include="Events\WorkoutExecuted.cs" />
+    <Compile Include="Events\WorkoutScheduleChanged.cs" />
     <Compile Include="Identity\ChallengeId.cs" />
     <Compile Include="Identity\MeasurementId.cs" />
     <Compile Include="Identity\WorkoutId.cs" />

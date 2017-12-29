@@ -21,7 +21,8 @@ namespace PushUp.Application.EventHandlers
             {nameof(RestingCycleChanged), ChangeRestingCycle },
             {nameof(ChallengePaused), PauseChallenge },
             {nameof(ChallengeActivated), ActivateChallenge },
-            {nameof(WorkoutExecuted), AddRepetitions }
+            {nameof(WorkoutExecuted), AddRepetitions },
+            {nameof(WorkoutScheduleChanged), SetWorkoutSchedule }
         };
         }
 
@@ -110,6 +111,15 @@ namespace PushUp.Application.EventHandlers
             {
                 var viewModel = await Repository.GetAsync(changeEvent.ChallengeId.Guid);
                 viewModel.TotalRepetitions += changeEvent.Repetitions;
+                await Repository.UpdateAsync(viewModel);
+            }
+        }
+        async Task SetWorkoutSchedule(IAggregateIdentity id, IEvent @event)
+        {
+            if(@event is WorkoutScheduleChanged changeEvent)
+            {
+                var viewModel = await Repository.GetAsync(id.Guid);
+                viewModel.Schedule = changeEvent.Schedule;
                 await Repository.UpdateAsync(viewModel);
             }
         }

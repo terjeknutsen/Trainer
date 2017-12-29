@@ -20,6 +20,7 @@ namespace Domain.Core.States
         public int Reps { get; private set; }
         public bool Executed { get; private set; }
         public DateTime PerformedOn { get; private set; }
+        public DateTime TimeToPerform { get; set; }
 
         public void When(WorkoutCreated @event)
         {

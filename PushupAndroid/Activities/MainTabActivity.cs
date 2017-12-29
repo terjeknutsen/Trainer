@@ -208,6 +208,12 @@ namespace no.trainer.personal.Activities
             Toast.MakeText(this, "Measurement selected", ToastLength.Long).Show();
             drawerLayout.CloseDrawers();
         }
+        [Export("AddChallenge")]
+        public void AddChallenge(View view)
+        {
+            var intent = new Intent(this, typeof(AddChallengeActivity));
+            StartActivity(intent);
+        }
 
         private void OnSetRestingCycleFailed(Guid obj)
         {

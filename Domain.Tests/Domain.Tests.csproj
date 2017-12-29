@@ -111,6 +111,7 @@
     <Compile Include="WhenCheckState\GivenMeasurementUnitChangedEvent.cs" />
     <Compile Include="WhenCheckState\GivenMeasurementValueAddedEvent.cs" />
     <Compile Include="WhenCheckState\GivenRestingCycleChangedEvent.cs" />
+    <Compile Include="WhenCheckState\GivenWorkoutScheduleChangedEvent.cs" />
     <Compile Include="WhenCreateChallenge\GivenChallengeAlreadyCreated.cs" />
     <Compile Include="WhenCreateChallenge\GivenIsNewChallenge.cs" />
     <Compile Include="WhenCheckState\GivenWorkoutCreatedEvent.cs" />
@@ -133,6 +134,7 @@
     <Compile Include="WhenSetWorkoutAsExecuted\GivenAlreadyExecuted.cs" />
     <Compile Include="WhenSetWorkoutAsExecuted\GivenWorkoutExecutedEventProvided.cs" />
     <Compile Include="WhenSetWorkoutAsExecuted\GivenWorkoutNotExecuted.cs" />
+    <Compile Include="WhenSetWorkoutSchedule\GivenScheduleNotSet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

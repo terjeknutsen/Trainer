@@ -10,6 +10,7 @@ using System;
 using ApplicationInterfaces;
 using ViewModels;
 using PushUp.Application.Views;
+using CoreDomain.Enteties;
 
 namespace PushUp.Application
 {
@@ -33,7 +34,7 @@ namespace PushUp.Application
         async Task When(CreateChallenge cmd)
         {
             var challengeId = new ChallengeId(cmd.Id);
-            await Update(challengeId, c => c.Create(challengeId,cmd.Repetitions,cmd.Description));  
+            await Update(challengeId, c => c.Create(challengeId,cmd.DailyRepetitions,cmd.Description));  
         }
         async Task When(SetChallengeDuration cmd)
         {
@@ -58,6 +59,10 @@ namespace PushUp.Application
         async Task When(ActivateChallenge cmd)
         {
             await Update(new ChallengeId(cmd.Id), c => c.Activate(DateTime.Now));
+        }
+        async Task When(SetWorkoutSchedule cmd)
+        {
+            await Update(new ChallengeId(cmd.Id), c => c.SetWorkoutSchedule(new WorkoutSchedule { Schedule = cmd.Schedule }, DateTime.Now));
         }
     }
 }
