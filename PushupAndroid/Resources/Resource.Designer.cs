@@ -2404,6 +2404,9 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f01011a
 			public const int statusBarScrim = 2130772250;
 			
+			// aapt resource value: 0x7f010167
+			public const int step_title = 2130772327;
+			
 			// aapt resource value: 0x7f0100d7
 			public const int subMenuArrow = 2130772183;
 			
@@ -3893,26 +3896,26 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02007a
-			public const int avd_hide_password_1 = 2130837626;
-			
 			// aapt resource value: 0x7f02007b
-			public const int avd_hide_password_2 = 2130837627;
+			public const int avd_hide_password_1 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int avd_hide_password_3 = 2130837628;
+			public const int avd_hide_password_2 = 2130837628;
+			
+			// aapt resource value: 0x7f02007d
+			public const int avd_hide_password_3 = 2130837629;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02007d
-			public const int avd_show_password_1 = 2130837629;
-			
 			// aapt resource value: 0x7f02007e
-			public const int avd_show_password_2 = 2130837630;
+			public const int avd_show_password_1 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int avd_show_password_3 = 2130837631;
+			public const int avd_show_password_2 = 2130837631;
+			
+			// aapt resource value: 0x7f020080
+			public const int avd_show_password_3 = 2130837632;
 			
 			// aapt resource value: 0x7f020055
 			public const int circle_bg = 2130837589;
@@ -3972,58 +3975,61 @@ namespace no.trainer.personal
 			public const int ic_play_circle_outline = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int navigation_empty_icon = 2130837608;
+			public const int ic_star = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int notification_action_background = 2130837609;
+			public const int navigation_empty_icon = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int notification_bg = 2130837610;
+			public const int notification_action_background = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int notification_bg_low = 2130837611;
+			public const int notification_bg = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int notification_bg_low_normal = 2130837612;
+			public const int notification_bg_low = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int notification_bg_low_pressed = 2130837613;
+			public const int notification_bg_low_normal = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int notification_bg_normal = 2130837614;
+			public const int notification_bg_low_pressed = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int notification_bg_normal_pressed = 2130837615;
+			public const int notification_bg_normal = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int notification_icon_background = 2130837616;
-			
-			// aapt resource value: 0x7f020078
-			public const int notification_template_icon_bg = 2130837624;
-			
-			// aapt resource value: 0x7f020079
-			public const int notification_template_icon_low_bg = 2130837625;
+			public const int notification_bg_normal_pressed = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int notification_tile_bg = 2130837617;
+			public const int notification_icon_background = 2130837617;
+			
+			// aapt resource value: 0x7f020079
+			public const int notification_template_icon_bg = 2130837625;
+			
+			// aapt resource value: 0x7f02007a
+			public const int notification_template_icon_low_bg = 2130837626;
 			
 			// aapt resource value: 0x7f020072
-			public const int notify_panel_notification_icon_bg = 2130837618;
+			public const int notification_tile_bg = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int startup_background = 2130837619;
+			public const int notify_panel_notification_icon_bg = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int tooltip_frame_dark = 2130837620;
+			public const int startup_background = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int tooltip_frame_light = 2130837621;
+			public const int tooltip_frame_dark = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int week_day_button_selected = 2130837622;
+			public const int tooltip_frame_light = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int week_day_button_unselected = 2130837623;
+			public const int week_day_button_selected = 2130837623;
+			
+			// aapt resource value: 0x7f020078
+			public const int week_day_button_unselected = 2130837624;
 			
 			static Drawable()
 			{
@@ -4146,6 +4152,12 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f090062
 			public const int buttonPanel = 2131296354;
 			
+			// aapt resource value: 0x7f0900e3
+			public const int button_add_workout = 2131296483;
+			
+			// aapt resource value: 0x7f0900dd
+			public const int button_set_challenge_date = 2131296477;
+			
 			// aapt resource value: 0x7f0900c7
 			public const int cancel_action = 2131296455;
 			
@@ -4185,14 +4197,14 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f0900a5
 			public const int container = 2131296421;
 			
-			// aapt resource value: 0x7f0900dc
-			public const int container_txt = 2131296476;
+			// aapt resource value: 0x7f0900e6
+			public const int container_txt = 2131296486;
 			
 			// aapt resource value: 0x7f090065
 			public const int contentPanel = 2131296357;
 			
-			// aapt resource value: 0x7f0900e9
-			public const int continueButton = 2131296489;
+			// aapt resource value: 0x7f0900f3
+			public const int continueButton = 2131296499;
 			
 			// aapt resource value: 0x7f0900a6
 			public const int coordinator = 2131296422;
@@ -4236,11 +4248,11 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f09001f
 			public const int disableHome = 2131296287;
 			
-			// aapt resource value: 0x7f0900de
-			public const int divider = 2131296478;
+			// aapt resource value: 0x7f0900e8
+			public const int divider = 2131296488;
 			
-			// aapt resource value: 0x7f0900db
-			public const int done = 2131296475;
+			// aapt resource value: 0x7f0900e5
+			public const int done = 2131296485;
 			
 			// aapt resource value: 0x7f09008d
 			public const int dots = 2131296397;
@@ -4248,11 +4260,11 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f09007d
 			public const int edit_query = 2131296381;
 			
-			// aapt resource value: 0x7f0900d8
-			public const int edit_text_challenge_daily_repetitions = 2131296472;
+			// aapt resource value: 0x7f0900d9
+			public const int edit_text_challenge_daily_repetitions = 2131296473;
 			
-			// aapt resource value: 0x7f0900d7
-			public const int edit_text_challenge_description = 2131296471;
+			// aapt resource value: 0x7f0900e0
+			public const int edit_text_challenge_description = 2131296480;
 			
 			// aapt resource value: 0x7f09002f
 			public const int end = 2131296303;
@@ -4371,8 +4383,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f0900bc
 			public const int main_view_pager = 2131296444;
 			
-			// aapt resource value: 0x7f0900ee
-			public const int masked = 2131296494;
+			// aapt resource value: 0x7f0900f8
+			public const int masked = 2131296504;
 			
 			// aapt resource value: 0x7f0900be
 			public const int measurement_current_value = 2131296446;
@@ -4389,8 +4401,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f0900c9
 			public const int media_actions = 2131296457;
 			
-			// aapt resource value: 0x7f0900ec
-			public const int message = 2131296492;
+			// aapt resource value: 0x7f0900f6
+			public const int message = 2131296502;
 			
 			// aapt resource value: 0x7f090030
 			public const int middle = 2131296304;
@@ -4404,17 +4416,17 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f090026
 			public const int multiply = 2131296294;
 			
-			// aapt resource value: 0x7f0900ef
-			public const int nav_challenge = 2131296495;
+			// aapt resource value: 0x7f0900f9
+			public const int nav_challenge = 2131296505;
 			
-			// aapt resource value: 0x7f0900f1
-			public const int nav_measurement = 2131296497;
+			// aapt resource value: 0x7f0900fb
+			public const int nav_measurement = 2131296507;
 			
-			// aapt resource value: 0x7f0900f0
-			public const int nav_workout = 2131296496;
+			// aapt resource value: 0x7f0900fa
+			public const int nav_workout = 2131296506;
 			
-			// aapt resource value: 0x7f0900e0
-			public const int navigation = 2131296480;
+			// aapt resource value: 0x7f0900ea
+			public const int navigation = 2131296490;
 			
 			// aapt resource value: 0x7f0900ab
 			public const int navigation_header_container = 2131296427;
@@ -4437,8 +4449,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f0900cb
 			public const int notification_main_column_container = 2131296459;
 			
-			// aapt resource value: 0x7f0900dd
-			public const int optional = 2131296477;
+			// aapt resource value: 0x7f0900e7
+			public const int optional = 2131296487;
 			
 			// aapt resource value: 0x7f09004b
 			public const int parallax = 2131296331;
@@ -4542,8 +4554,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f090088
 			public const int search_voice_btn = 2131296392;
 			
-			// aapt resource value: 0x7f0900d9
-			public const int seekbar_challenge_daily_repetitions = 2131296473;
+			// aapt resource value: 0x7f0900da
+			public const int seekbar_challenge_daily_repetitions = 2131296474;
 			
 			// aapt resource value: 0x7f090089
 			public const int select_dialog_listview = 2131296393;
@@ -4593,41 +4605,65 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f0900c8
 			public const int status_bar_latest_event_content = 2131296456;
 			
-			// aapt resource value: 0x7f0900da
-			public const int step = 2131296474;
+			// aapt resource value: 0x7f0900e4
+			public const int step = 2131296484;
+			
+			// aapt resource value: 0x7f0900f5
+			public const int stepCounter = 2131296501;
+			
+			// aapt resource value: 0x7f0900ed
+			public const int stepEnd = 2131296493;
+			
+			// aapt resource value: 0x7f0900ee
+			public const int stepError = 2131296494;
+			
+			// aapt resource value: 0x7f0900f2
+			public const int stepNavigation = 2131296498;
+			
+			// aapt resource value: 0x7f0900ec
+			public const int stepNext = 2131296492;
+			
+			// aapt resource value: 0x7f0900ef
+			public const int stepPager = 2131296495;
 			
 			// aapt resource value: 0x7f0900eb
-			public const int stepCounter = 2131296491;
+			public const int stepPrev = 2131296491;
 			
-			// aapt resource value: 0x7f0900e3
-			public const int stepEnd = 2131296483;
+			// aapt resource value: 0x7f0900f4
+			public const int stepProgress = 2131296500;
 			
-			// aapt resource value: 0x7f0900e4
-			public const int stepError = 2131296484;
+			// aapt resource value: 0x7f0900e9
+			public const int stepSwitcher = 2131296489;
 			
-			// aapt resource value: 0x7f0900e8
-			public const int stepNavigation = 2131296488;
+			// aapt resource value: 0x7f0900f1
+			public const int stepTabs = 2131296497;
 			
-			// aapt resource value: 0x7f0900e2
-			public const int stepNext = 2131296482;
+			// aapt resource value: 0x7f0900d7
+			public const int step_challenge_date_end = 2131296471;
 			
-			// aapt resource value: 0x7f0900e5
-			public const int stepPager = 2131296485;
+			// aapt resource value: 0x7f0900d6
+			public const int step_challenge_date_start = 2131296470;
+			
+			// aapt resource value: 0x7f0900db
+			public const int step_challenge_date_title = 2131296475;
+			
+			// aapt resource value: 0x7f0900de
+			public const int step_challenge_description_title = 2131296478;
+			
+			// aapt resource value: 0x7f0900d8
+			public const int step_daily_repetition_title = 2131296472;
+			
+			// aapt resource value: 0x7f0900dc
+			public const int step_item_challenge_date = 2131296476;
 			
 			// aapt resource value: 0x7f0900e1
-			public const int stepPrev = 2131296481;
+			public const int step_item_workout_title = 2131296481;
 			
-			// aapt resource value: 0x7f0900ea
-			public const int stepProgress = 2131296490;
+			// aapt resource value: 0x7f0900e2
+			public const int step_workout_spinner = 2131296482;
 			
-			// aapt resource value: 0x7f0900df
-			public const int stepSwitcher = 2131296479;
-			
-			// aapt resource value: 0x7f0900e7
-			public const int stepTabs = 2131296487;
-			
-			// aapt resource value: 0x7f0900e6
-			public const int steps = 2131296486;
+			// aapt resource value: 0x7f0900f0
+			public const int steps = 2131296496;
 			
 			// aapt resource value: 0x7f090075
 			public const int submenuarrow = 2131296373;
@@ -4671,8 +4707,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f090068
 			public const int textSpacerNoTitle = 2131296360;
 			
-			// aapt resource value: 0x7f0900d6
-			public const int text_input_layout_challenge_description = 2131296470;
+			// aapt resource value: 0x7f0900df
+			public const int text_input_layout_challenge_description = 2131296479;
 			
 			// aapt resource value: 0x7f0900b0
 			public const int text_input_password_toggle = 2131296432;
@@ -4740,8 +4776,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f090016
 			public const int view_offset_helper = 2131296278;
 			
-			// aapt resource value: 0x7f0900ed
-			public const int visible = 2131296493;
+			// aapt resource value: 0x7f0900f7
+			public const int visible = 2131296503;
 			
 			// aapt resource value: 0x7f09009e
 			public const int wednesday = 2131296414;
@@ -5073,31 +5109,46 @@ namespace no.trainer.personal
 			public const int step_challenge_date = 2130903123;
 			
 			// aapt resource value: 0x7f030054
-			public const int step_tab = 2130903124;
+			public const int step_item_challenge_daily_repetitions = 2130903124;
 			
 			// aapt resource value: 0x7f030055
-			public const int step_tab_alternative = 2130903125;
+			public const int step_item_challenge_date = 2130903125;
 			
 			// aapt resource value: 0x7f030056
-			public const int style_dots = 2130903126;
+			public const int step_item_challenge_description = 2130903126;
 			
 			// aapt resource value: 0x7f030057
-			public const int style_horizontal_tabs = 2130903127;
+			public const int step_item_workout = 2130903127;
 			
 			// aapt resource value: 0x7f030058
-			public const int style_progress = 2130903128;
+			public const int step_tab = 2130903128;
 			
 			// aapt resource value: 0x7f030059
-			public const int style_text = 2130903129;
+			public const int step_tab_alternative = 2130903129;
 			
 			// aapt resource value: 0x7f03005a
-			public const int support_simple_spinner_dropdown_item = 2130903130;
+			public const int step_workout = 2130903130;
 			
 			// aapt resource value: 0x7f03005b
-			public const int tooltip = 2130903131;
+			public const int style_dots = 2130903131;
 			
 			// aapt resource value: 0x7f03005c
-			public const int verticalDivider = 2130903132;
+			public const int style_horizontal_tabs = 2130903132;
+			
+			// aapt resource value: 0x7f03005d
+			public const int style_progress = 2130903133;
+			
+			// aapt resource value: 0x7f03005e
+			public const int style_text = 2130903134;
+			
+			// aapt resource value: 0x7f03005f
+			public const int support_simple_spinner_dropdown_item = 2130903135;
+			
+			// aapt resource value: 0x7f030060
+			public const int tooltip = 2130903136;
+			
+			// aapt resource value: 0x7f030061
+			public const int verticalDivider = 2130903137;
 			
 			static Layout()
 			{
@@ -5227,6 +5278,9 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f080043
 			public const int add_challenge_title = 2131230787;
 			
+			// aapt resource value: 0x7f08004d
+			public const int add_workout = 2131230797;
+			
 			// aapt resource value: 0x7f080000
 			public const int app_name = 2131230720;
 			
@@ -5248,8 +5302,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f080031
 			public const int day = 2131230769;
 			
-			// aapt resource value: 0x7f08004b
-			public const int dots_stepper = 2131230795;
+			// aapt resource value: 0x7f080052
+			public const int dots_stepper = 2131230802;
 			
 			// aapt resource value: 0x7f080046
 			public const int error_challenge_description = 2131230790;
@@ -5263,14 +5317,14 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f08003c
 			public const int highlights = 2131230780;
 			
-			// aapt resource value: 0x7f080044
-			public const int hint_challenge_daily_repetitions = 2131230788;
-			
 			// aapt resource value: 0x7f080042
 			public const int hint_challenge_description = 2131230786;
 			
-			// aapt resource value: 0x7f080047
-			public const int linear = 2131230791;
+			// aapt resource value: 0x7f08004e
+			public const int linear = 2131230798;
+			
+			// aapt resource value: 0x7f080048
+			public const int mandatory = 2131230792;
 			
 			// aapt resource value: 0x7f08003f
 			public const int measurement = 2131230783;
@@ -5299,8 +5353,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f080006
 			public const int ms_text_step = 2131230726;
 			
-			// aapt resource value: 0x7f08004c
-			public const int non_linear = 2131230796;
+			// aapt resource value: 0x7f080053
+			public const int non_linear = 2131230803;
 			
 			// aapt resource value: 0x7f080040
 			public const int open_menu = 2131230784;
@@ -5320,8 +5374,8 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f08002f
 			public const int path_password_strike_through = 2131230767;
 			
-			// aapt resource value: 0x7f08004a
-			public const int progress_stepper = 2131230794;
+			// aapt resource value: 0x7f080051
+			public const int progress_stepper = 2131230801;
 			
 			// aapt resource value: 0x7f08003a
 			public const int saturday = 2131230778;
@@ -5332,26 +5386,44 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f08001b
 			public const int status_bar_notification_info_overflow = 2131230747;
 			
+			// aapt resource value: 0x7f08004a
+			public const int step_challenge_end_title = 2131230794;
+			
 			// aapt resource value: 0x7f080045
 			public const int step_challenge_error = 2131230789;
+			
+			// aapt resource value: 0x7f08004b
+			public const int step_challenge_start_title = 2131230795;
+			
+			// aapt resource value: 0x7f080049
+			public const int step_item_set_date = 2131230793;
+			
+			// aapt resource value: 0x7f08004c
+			public const int step_workout_title = 2131230796;
 			
 			// aapt resource value: 0x7f08003b
 			public const int sunday = 2131230779;
 			
-			// aapt resource value: 0x7f080048
-			public const int tabs_stepper = 2131230792;
+			// aapt resource value: 0x7f08004f
+			public const int tabs_stepper = 2131230799;
 			
-			// aapt resource value: 0x7f08004d
-			public const int tabs_stepper_alternative = 2131230797;
+			// aapt resource value: 0x7f080054
+			public const int tabs_stepper_alternative = 2131230804;
 			
-			// aapt resource value: 0x7f08004e
-			public const int tabs_stepper_classic = 2131230798;
+			// aapt resource value: 0x7f080055
+			public const int tabs_stepper_classic = 2131230805;
 			
-			// aapt resource value: 0x7f080049
-			public const int text_stepper = 2131230793;
+			// aapt resource value: 0x7f080050
+			public const int text_stepper = 2131230800;
 			
 			// aapt resource value: 0x7f080038
 			public const int thursday = 2131230776;
+			
+			// aapt resource value: 0x7f080047
+			public const int title_challenge_description = 2131230791;
+			
+			// aapt resource value: 0x7f080044
+			public const int title_daily_repetitions = 2131230788;
 			
 			// aapt resource value: 0x7f080033
 			public const int total_repetitions = 2131230771;
@@ -5405,47 +5477,47 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f0a0196
 			public const int AppTheme_Blue = 2131362198;
 			
+			// aapt resource value: 0x7f0a019a
+			public const int AppTheme_Cyan = 2131362202;
+			
+			// aapt resource value: 0x7f0a01a2
+			public const int AppTheme_DeepOrange = 2131362210;
+			
 			// aapt resource value: 0x7f0a0199
-			public const int AppTheme_Cyan = 2131362201;
+			public const int AppTheme_Dialog_Alert_Blue = 2131362201;
 			
-			// aapt resource value: 0x7f0a019f
-			public const int AppTheme_DeepOrange = 2131362207;
+			// aapt resource value: 0x7f0a019d
+			public const int AppTheme_Dialog_Alert_Cyan = 2131362205;
 			
-			// aapt resource value: 0x7f0a0198
-			public const int AppTheme_Dialog_Alert_Blue = 2131362200;
-			
-			// aapt resource value: 0x7f0a019b
-			public const int AppTheme_Dialog_Alert_Cyan = 2131362203;
-			
-			// aapt resource value: 0x7f0a01a1
-			public const int AppTheme_Dialog_Alert_DeepOrange = 2131362209;
+			// aapt resource value: 0x7f0a01a5
+			public const int AppTheme_Dialog_Alert_DeepOrange = 2131362213;
 			
 			// aapt resource value: 0x7f0a0195
 			public const int AppTheme_Dialog_Alert_Green = 2131362197;
 			
-			// aapt resource value: 0x7f0a019e
-			public const int AppTheme_Dialog_Alert_Teal = 2131362206;
+			// aapt resource value: 0x7f0a01a1
+			public const int AppTheme_Dialog_Alert_Teal = 2131362209;
 			
 			// aapt resource value: 0x7f0a0197
 			public const int AppTheme_Dialog_Blue = 2131362199;
 			
-			// aapt resource value: 0x7f0a019a
-			public const int AppTheme_Dialog_Cyan = 2131362202;
+			// aapt resource value: 0x7f0a019c
+			public const int AppTheme_Dialog_Cyan = 2131362204;
 			
-			// aapt resource value: 0x7f0a01a0
-			public const int AppTheme_Dialog_DeepOrange = 2131362208;
+			// aapt resource value: 0x7f0a01a4
+			public const int AppTheme_Dialog_DeepOrange = 2131362212;
 			
 			// aapt resource value: 0x7f0a0193
 			public const int AppTheme_Dialog_Green = 2131362195;
 			
-			// aapt resource value: 0x7f0a019d
-			public const int AppTheme_Dialog_Teal = 2131362205;
+			// aapt resource value: 0x7f0a01a0
+			public const int AppTheme_Dialog_Teal = 2131362208;
 			
 			// aapt resource value: 0x7f0a0191
 			public const int AppTheme_Green = 2131362193;
 			
-			// aapt resource value: 0x7f0a019c
-			public const int AppTheme_Teal = 2131362204;
+			// aapt resource value: 0x7f0a019e
+			public const int AppTheme_Teal = 2131362206;
 			
 			// aapt resource value: 0x7f0a00a6
 			public const int Base_AlertDialog_AppCompat = 2131361958;
@@ -6032,8 +6104,20 @@ namespace no.trainer.personal
 			// aapt resource value: 0x7f0a003c
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131361852;
 			
+			// aapt resource value: 0x7f0a0198
+			public const int Stepper_Theme_Blue = 2131362200;
+			
+			// aapt resource value: 0x7f0a019b
+			public const int Stepper_Theme_Cyan = 2131362203;
+			
+			// aapt resource value: 0x7f0a01a3
+			public const int Stepper_Theme_DeepOrange = 2131362211;
+			
 			// aapt resource value: 0x7f0a0194
-			public const int Stepper_Theme = 2131362196;
+			public const int Stepper_Theme_Green = 2131362196;
+			
+			// aapt resource value: 0x7f0a019f
+			public const int Stepper_Theme_Teal = 2131362207;
 			
 			// aapt resource value: 0x7f0a00d3
 			public const int TextAppearance_AppCompat = 2131362003;
@@ -8304,6 +8388,12 @@ namespace no.trainer.personal
 			
 			// aapt resource value: 4
 			public const int Spinner_popupTheme = 4;
+			
+			public static int[] StepItemChallengeDate = new int[] {
+					2130772327};
+			
+			// aapt resource value: 0
+			public const int StepItemChallengeDate_step_title = 0;
 			
 			public static int[] SwitchCompat = new int[] {
 					16843044,

@@ -6,4 +6,7 @@
   <declare-styleable name="play_button">
     <attr name="isPaused" format="boolean"/>  
   </declare-styleable>
+  <declare-styleable name="StepItemChallengeDate">
+    <attr name="step_title" format="string"/>
+  </declare-styleable>
 </resources>

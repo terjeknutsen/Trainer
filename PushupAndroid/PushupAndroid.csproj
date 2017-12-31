@@ -161,6 +161,7 @@
     <Compile Include="Activities\MainTabActivity.cs" />
     <Compile Include="Activities\Steps\ChallengeDateStep.cs" />
     <Compile Include="Activities\Steps\ChallengeStep.cs" />
+    <Compile Include="Activities\Steps\WorkoutStep.cs" />
     <Compile Include="Activities\Utils\DrawerToggle.cs" />
     <Compile Include="Adapters\ChallengeAdapter.cs" />
     <Compile Include="Activities\MainActivity.cs" />
@@ -188,6 +189,7 @@
     <Compile Include="Interfaces\IGetWorkout.cs" />
     <Compile Include="Interfaces\INotifyPropertyChanged.cs" />
     <Compile Include="Interfaces\IPauseChallenge.cs" />
+    <Compile Include="Interfaces\ISelectDate.cs" />
     <Compile Include="Interfaces\ISetRestingCycle.cs" />
     <Compile Include="Interfaces\ISetWorkoutAsExecuted.cs" />
     <Compile Include="PushupApplication.cs" />
@@ -204,6 +206,7 @@
     <Compile Include="Widgets\CustomSwitch.cs" />
     <Compile Include="Widgets\CustomToggleButton.cs" />
     <Compile Include="Widgets\PlayButton.cs" />
+    <Compile Include="Widgets\StepItemChallengeDate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -286,6 +289,21 @@
     <AndroidResource Include="Resources\layout\step_challenge_date.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\step_item_challenge_description.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step_item_challenge_daily_repetitions.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step_item_challenge_date.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step_workout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\step_item_workout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\main.axml">
@@ -340,6 +358,8 @@
     <AndroidResource Include="Resources\drawable\startup_background.xml" />
     <AndroidResource Include="Resources\values-v21\Dimensions.xml" />
     <AndroidResource Include="Resources\values\Dimensions.xml" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_star.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_star.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ApplicationInterfaces\ApplicationInterfaces.csproj">

@@ -19,11 +19,18 @@
   <string name="measurement">Measurement</string>
   <string name="open_menu">Where to go next?</string>
   <string name="measurement_value_hint">Current</string>
-  <string name="hint_challenge_description">Describe your challenge</string>
-  <string name="add_challenge_title">Create your challenge</string>
-  <string name="hint_challenge_daily_repetitions">Daily repetitions</string>
+  <string name="hint_challenge_description"></string>
+  <string name="add_challenge_title">Create a challenge</string>
+  <string name="title_daily_repetitions">Daily repetitions</string>
   <string name="step_challenge_error">Both description and daily repetitions needs to have a value</string>
-  <string name="error_challenge_description">*mandatory field</string>
+  <string name="error_challenge_description">cannot be empty</string>
+  <string name="title_challenge_description">Description</string>
+  <string name="mandatory">Mandatory</string>
+  <string name="step_item_set_date">Select date</string>
+  <string name="step_challenge_end_title">Last workout date</string>
+  <string name="step_challenge_start_title">First workout date</string>
+  <string name="step_workout_title">Workout</string>
+  <string name="add_workout">Create new workout</string>
 
 
   <string name="app_name">Material Stepper Sample</string>

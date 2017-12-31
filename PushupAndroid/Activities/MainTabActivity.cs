@@ -80,7 +80,7 @@ namespace no.trainer.personal.Activities
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            SetTheme(Resource.Style.AppTheme_Teal);
+            SetTheme(Resource.Style.AppTheme_DeepOrange);
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.main_tab_view);
            

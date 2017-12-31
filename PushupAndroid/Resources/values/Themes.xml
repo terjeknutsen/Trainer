@@ -37,10 +37,8 @@
     <item name="colorAccent">@color/material_green_a700</item>
   </style>
   
-  <style name="Stepper.Theme" parent="Theme.AppCompat.DayNight.DarkActionBar">
-    <item name="colorPrimary">@color/colorPrimary</item>
-    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-    <item name="colorAccent">@color/colorAccent</item>
+  <!-- Green stepper theme-->
+  <style name="Stepper.Theme.Green" parent="AppTheme.Green">
     <item name="android:windowIsTranslucent">true</item>
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
@@ -79,6 +77,12 @@
     <item name="colorPrimaryDark">@color/material_blue_700</item>
     <item name="colorAccent">@color/material_blue_a700</item>
   </style>
+  <!-- blue stepper theme-->
+  <style name="Stepper.Theme.Blue" parent="AppTheme.Blue">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
 
   <!-- blue Alert Dialog Theme -->
   <style name="AppTheme.Dialog.Alert.Blue" parent="Theme.AppCompat.Light.Dialog.Alert">
@@ -94,6 +98,7 @@
     <item name="colorPrimaryDark">@color/material_cyan_700</item>
     <item name="colorAccent">@color/material_cyan_a700</item>
 
+    
     <!-- AppCompat Control Attributes -->
 
     <item name="colorButtonNormal">@color/material_cyan_500</item>
@@ -106,6 +111,13 @@
     <!-- AppCompat Dialog Attributes -->
     <item name="dialogTheme">@style/AppTheme.Dialog.Cyan</item>
     <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Cyan</item>
+  </style>
+
+  <!-- cyan stepper theme-->
+  <style name="Stepper.Theme.Cyan" parent="AppTheme.Cyan">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
   </style>
 
   <!-- Cyan Dialog Theme -->
@@ -144,6 +156,12 @@
     <item name="dialogTheme">@style/AppTheme.Dialog.Teal</item>
     <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Blue</item>
   </style>
+  <!-- Teal stepper theme-->
+  <style name="Stepper.Theme.Teal" parent="AppTheme.Teal">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
 
   <!-- Teal Dialog Theme -->
   <style name="AppTheme.Dialog.Teal" parent="Theme.AppCompat.Light.Dialog">
@@ -178,6 +196,13 @@
     <!-- AppCompat Dialog Attributes -->
     <item name="dialogTheme">@style/AppTheme.Dialog.DeepOrange</item>
     <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert.Blue</item>
+  </style>
+
+  <!-- Deep orange stepper theme-->
+  <style name="Stepper.Theme.DeepOrange" parent="AppTheme.DeepOrange">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
   </style>
 
   <!-- DeepOrange Dialog Theme -->
